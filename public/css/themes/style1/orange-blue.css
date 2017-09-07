@@ -153,8 +153,10 @@ hr {
   text-align: center;
 }
 #topbar .navbar-header #logo {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 20px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
   color: #ffffff;
   height: 100%;
   width: 100%;
