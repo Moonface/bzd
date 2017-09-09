@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Incident;
 
 class PagesController extends Controller
 {
-    public function contact()
+
+    public function desktop()
     {
-        return view('pages.contact');
+        return view('pages.desktop');
     }
 
-    public function about()
-    {
-        return view('pages.about');
-    }
 }

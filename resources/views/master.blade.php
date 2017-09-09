@@ -10,9 +10,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{{ URL::asset('images/icons/favicon-72x72.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ URL::asset('images/icons/favicon-114x114.png') }}">
     <!--Loading bootstrap css-->
-    <link type="text/css" rel="stylesheet"
-          href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&amp;subset=latin-ext">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&amp;subset=latin-ext">
     <link type="text/css" rel="stylesheet" href="{{ URL::asset('vendors/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ URL::asset('vendors/font-awesome/css/font-awesome.min.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ URL::asset('vendors/bootstrap/css/bootstrap.min.css') }}">
@@ -47,7 +46,7 @@
                 <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle"><span
                             class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
                             class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a id="logo" href="index.html" class="navbar-brand"><span class="fa fa-rocket"></span><span
+                <a id="logo" href="/desktop" class="navbar-brand"><span class="fa fa-rocket"></span><span
                             class="logo-text">B.Z.D.</span><span style="display: none" class="logo-text-icon">B.Z.D.</span></a>
             </div>
             <div class="topbar-main"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
@@ -249,74 +248,7 @@
                         </ul>
                     </li>
                     {{--Put chat button here--}}
-                    <li class="dropdown hidden-xs"><!--BEGIN THEME SETTING--><a id="theme-setting" href="javascript:;"
-                                                                                data-hover="dropdown" data-step="1"
-                                                                                data-intro="&lt;b&gt;Header&lt;/b&gt;, &lt;b&gt;sidebar&lt;/b&gt;, &lt;b&gt;border style&lt;/b&gt; and &lt;b&gt;color&lt;/b&gt;, all of them can change for you to create the best"
-                                                                                data-position="left"
-                                                                                class="dropdown-toggle"><i
-                                    class="fa fa-cogs"></i></a>
-                        <ul class="dropdown-menu dropdown-theme-setting pull-right">
-                            <li><h4 class="mtn">Theme Styles</h4><select id="list-style" class="form-control">
-                                    <option value="style1">Flat Squared style</option>
-                                    <option value="style2">Flat Rounded style</option>
-                                    <option value="style3">Flat Border style</option>
-                                </select></li>
-                            <li><h4 class="mtn">Menu Styles</h4><select id="list-menu" class="form-control">
-                                    <option value="sidebar-default">Menu style 1</option>
-                                    <option value="sidebar-colors">Menu style 2</option>
-                                    <option value="sidebar-icons">Menu style 3</option>
-                                    <option value="sidebar-collapsed">Menu style 4</option>
-                                </select></li>
-                            <li><h4 class="mtn">Header & Sidebar</h4><select id="list-header" class="form-control">
-                                    <option value="header-static">Static</option>
-                                    <option value="header-fixed">Fixed</option>
-                                </select></li>
-                            <li><h4 class="mtn">Theme Colors</h4>
-                                <ul id="list-color" class="list-unstyled list-inline">
-                                    <li data-color="green-dark" data-hover="tooltip" title="Green - Dark"
-                                        class="green-dark"></li>
-                                    <li data-color="red-dark" data-hover="tooltip" title="Red - Dark"
-                                        class="red-dark"></li>
-                                    <li data-color="pink-dark" data-hover="tooltip" title="Pink - Dark"
-                                        class="pink-dark"></li>
-                                    <li data-color="blue-dark" data-hover="tooltip" title="Blue - Dark"
-                                        class="blue-dark"></li>
-                                    <li data-color="yellow-dark" data-hover="tooltip" title="Yellow - Dark"
-                                        class="yellow-dark"></li>
-                                    <li data-color="green-grey" data-hover="tooltip" title="Green - Grey"
-                                        class="green-grey"></li>
-                                    <li data-color="red-grey" data-hover="tooltip" title="Red - Grey"
-                                        class="red-grey"></li>
-                                    <li data-color="pink-grey" data-hover="tooltip" title="Pink - Grey"
-                                        class="pink-grey"></li>
-                                    <li data-color="blue-grey" data-hover="tooltip" title="Blue - Grey"
-                                        class="blue-grey"></li>
-                                    <li data-color="yellow-grey" data-hover="tooltip" title="Yellow - Grey"
-                                        class="yellow-grey"></li>
-                                    <li data-color="yellow-green" data-hover="tooltip" title="Yellow - Green"
-                                        class="yellow-green"></li>
-                                    <li data-color="orange-grey" data-hover="tooltip" title="Orange - Grey"
-                                        class="orange-grey"></li>
-                                    <li data-color="pink-blue" data-hover="tooltip" title="Pink - Blue"
-                                        class="pink-blue"></li>
-                                    <li data-color="pink-violet" data-hover="tooltip" title="Pink - Violet"
-                                        class="pink-violet active"></li>
-                                    <li data-color="orange-violet" data-hover="tooltip" title="Orange - Violet"
-                                        class="orange-violet"></li>
-                                    <li data-color="pink-green" data-hover="tooltip" title="Pink - Green"
-                                        class="pink-green"></li>
-                                    <li data-color="pink-brown" data-hover="tooltip" title="Pink - Brown"
-                                        class="pink-brown"></li>
-                                    <li data-color="orange-blue" data-hover="tooltip" title="Orange - Blue"
-                                        class="orange-blue"></li>
-                                    <li data-color="yellow-blue" data-hover="tooltip" title="Yellow - Blue"
-                                        class="yellow-blue"></li>
-                                    <li data-color="green-blue" data-hover="tooltip" title="Green - Blue"
-                                        class="green-blue"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!--END THEME SETTING--></li>
+
                 </ul>
             </div>
         </nav>
@@ -380,7 +312,7 @@
                         </div>
                         <div class="clearfix"></div>
                     </li>
-                    <li><a href="#">
+                    <li><a href="/desktop">
                             <i class="fa fa-desktop fa-fw">
                                 <div class="icon-bg bg-orange"></div>
                             </i><span class="menu-title">Pulpit</span>
@@ -408,7 +340,7 @@
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                            <i class="fa fa-map-marker fa-fw">
+                            <i class="fa fa-map-signs fa-fw">
                                 <div class="icon-bg bg-orange"></div>
                             </i><span class="menu-title">Gminy</span>
                         </a>
@@ -421,7 +353,28 @@
                         </a>
                     </li>
                     <li>
+                        <a href="/incidents">
+                            <i class="fa fa-exclamation-triangle  fa-fw">
+                                <div class="icon-bg bg-orange"></div>
+                            </i><span class="menu-title">Zdarzenia</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#" target="_blank">
+                            <i class="fa fa-users fa-fw">
+                                <div class="icon-bg bg-orange"></div>
+                            </i><span class="menu-title">Uczestnicy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-car fa-fw">
+                                <div class="icon-bg bg-orange"></div>
+                            </i><span class="menu-title">Pojazdy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <i class="fa fa-road fa-fw">
                                 <div class="icon-bg bg-orange"></div>
                             </i><span class="menu-title">Drogi</span>
@@ -429,21 +382,9 @@
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                            <i class="fa fa-book fa-fw">
+                            <i class="fa fa-line-chart fa-fw">
                                 <div class="icon-bg bg-orange"></div>
                             </i><span class="menu-title">Raporty brd</span>
-                        </a>
-                    </li>
-                    <li><a href="/contact">
-                            <i class="fa fa-envelope  fa-fw">
-                            <div class="icon-bg bg-green"></div>
-                            </i><span class="menu-title">Kontakt</span>
-                        </a>
-                    </li>
-                    <li><a href="/about">
-                            <i class="fa fa-info-circle fa-fw">
-                            <div class="icon-bg bg-green"></div>
-                            </i><span class="menu-title">O nas</span>
                         </a>
                     </li>
                 </ul>
@@ -457,38 +398,7 @@
         <!--BEGIN PAGE WRAPPER-->
         <div id="page-wrapper">
             <!--BEGIN TITLE & BREADCRUMB PAGE-->
-            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
-                <div class="page-header pull-left">
-                    <div class="page-title">O nas</div>
-                </div>
-                <ol class="breadcrumb page-breadcrumb">
-                    <li>
-                        <i class="fa fa-home"></i>
-                        &nbsp;
-                        <a href="index.html">Strona główna</a>
-                        &nbsp;&nbsp;
-                        <i class="fa fa-angle-right"></i>
-                        &nbsp;&nbsp;
-                    </li>
-                    <li>
-                        <a href="#">B.Z.D.</a>
-                        &nbsp;&nbsp;
-                        <i class="fa fa-angle-right"></i>
-                        &nbsp;&nbsp;
-                    </li>
-                    <li class="active">O nas</li>
-                </ol>
-                <div class="btn btn-blue reportrange hide">
-                    <i class="fa fa-calendar"></i>
-                    &nbsp;
-                    <span></span>
-                    &nbsp;report&nbsp;
-                    <i class="fa fa-angle-down"></i>
-                    <input type="hidden" name="datestart"/>
-                    <input type="hidden" name="endstart"/>
-                </div>
-                <div class="clearfix"></div>
-            </div>
+
             <!--END TITLE & BREADCRUMB PAGE-->
             <!--BEGIN CONTENT-->
 
